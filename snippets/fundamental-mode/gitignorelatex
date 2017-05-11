@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: LaTeX .gitignore
+# key: gitignorelate
+# --
+*.toc
+*.aux
+*.tex~
+*.tex#
+*.log
+*.pdf
+*.dvi
+_region_.*
+backup/*
+auto/*

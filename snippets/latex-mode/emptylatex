@@ -1,0 +1,53 @@
+# -*- mode: snippet -*-
+# name: Empty LaTeX document
+# key: emptylatex
+# --
+\documentclass[12pt, twoside]{article}
+
+% Language settings
+\usepackage[${1:english}]{babel}
+
+% Page settings
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+
+% Headers and 
+\usepackage{fancyhdr}
+
+% Picture captions
+\usepackage[font=small,labelfont=bf]{caption}
+
+% No sé què fa acò, averiguar
+%\usepackage{microtype}
+
+% Encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Mathematical notation
+\usepackage{mathtools}
+\usepackage{amssymb}
+
+% Not sure
+%\usepackage{txfonts}
+
+% Graphics
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+\usepackage{wrapfig}
+
+\usepackage{booktabs}
+
+\title{}
+
+\author{\small{\texttt{llacan@alumni.uv.es}}}
+\date{\today{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\end{document}

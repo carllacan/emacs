@@ -33,18 +33,32 @@
  '(org-agenda-files nil)
 )
 
-
-
 ; Enable visual mode everywhere
 (global-visual-line-mode 1)
 
 ;;; Aliases
 
+(defalias 'snippet 'yas-insert.snippet)
 (defalias 'ts 'transpose-sentences)
 (defalias 'tp 'transpose-paragraphs)
 (defalias 'wrt 'writeroom-mode)
 
 ;;;;;;;;;;;;; MODES ;;;;;;;;;;;
+
+;;; YASNIPPET MODE ;;;
+
+(add-to-list 'load-path
+              "~/.emacs.d/lisp/yasnippet")
+(require 'yasnippet)
+(setq yas-snippet-dirs
+      '("~/.emacs.d/snippets"                 ;; personal snippets
+        "~/.emacs.d/lisp/yasnippet/snippets"         ;; the default collection
+        ))
+
+(yas-global-mode 1)
+
+;(yas-reload-all)
+;(add-hook 'prog-mode-hook #'yas-minor-mode)
 
 ;;; ORG MODE ;;;
 
